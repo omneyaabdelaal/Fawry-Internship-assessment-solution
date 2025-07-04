@@ -40,13 +40,6 @@ class ECommerceApplication {
         return productService.getProductByName(name);
     }
 
-    public void listProducts() {
-        System.out.println("Available Products:");
-        for (Product product : productService.getAllProducts()) {
-            System.out.println("- " + product);
-        }
-    }
-
     public Cart createCart() {
         return cartService.createCart();
     }
